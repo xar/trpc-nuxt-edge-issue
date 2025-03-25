@@ -12,6 +12,7 @@
   "dependencies": {
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
+    "devalue": "^5.1.1",
     "nuxt": "^3.16.1",
     "superjson": "^2.2.2",
     "trpc-nuxt": "^0.11.1",

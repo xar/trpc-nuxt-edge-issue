@@ -1,6 +1,7 @@
 import { initTRPC } from "@trpc/server";
 import type { H3Event } from "h3";
 import superjson from "superjson";
+import { transformer } from "./devalue";
 export const createTRPCContext = async (event: H3Event) => {
   /**
    * @see: https://trpc.io/docs/server/context
@@ -17,6 +18,7 @@ const t = initTRPC.create({
    * @see https://trpc.io/docs/server/data-transformers
    */
   transformer: superjson,
+  // transformer: transformer,
 });
 
 // Base router and procedure helpers
